@@ -8,7 +8,8 @@ function UserSearch() {
     const [text, setText] = useState('')
 
     const {users, dispatch} = useContext(GithubContext)
-
+    
+    
     const {setAlert} = useContext(AlertContext)
 
     const handleChange = (e) => setText(e.target.value)
